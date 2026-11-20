@@ -18,17 +18,36 @@ export default function Header({ emailUrl }: { emailUrl: string }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("inicio");
 
-  // Highlight the section currently in view.
+  // Highlight the section currently in view: the last section whose top has passed
+  // a line just below the sticky header. The last section (Contactos) can't scroll
+  // up to that line, so once the page is scrolled to the bottom it becomes active.
   useEffect(() => {
-    const sections = NAV.map((n) => document.getElementById(n.id)).filter(Boolean) as HTMLElement[];
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) if (e.isIntersecting) setActive(e.target.id);
-      },
-      { rootMargin: "-45% 0px -50% 0px" },
-    );
-    sections.forEach((s) => observer.observe(s));
-    return () => observer.disconnect();
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const sections = NAV.map((n) => document.getElementById(n.id)).filter(Boolean) as HTMLElement[];
+      if (!sections.length) return;
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      if (atBottom) return setActive(sections[sections.length - 1].id);
+      // Just below the point where a clicked section lands (html scroll-padding-top),
+      // so a short section like Sobre stays active after clicking it.
+      const padding = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 88;
+      const line = padding + 48;
+      let current = sections[0].id;
+      for (const s of sections) if (s.getBoundingClientRect().top <= line) current = s.id;
+      setActive(current);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      cancelAnimationFrame(frame);
+    };
   }, []);
 
   // Close the mobile menu with Escape or when resizing to desktop.
