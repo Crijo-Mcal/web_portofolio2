@@ -1,0 +1,18 @@
+[
+  {
+    "type": "ESTÁGIO",
+    "place": "AVEIRO · HÍBRIDO",
+    "period": "julho de 2026 — atualidade",
+    "company": "BSWebConnect",
+    "role": "Junior Full-Stack Web Developer · ReservaJá",
+    "description": "Durante o estágio, desenvolvo a ReservaJá, uma aplicação web de reservas de serviços, com funcionalidades de gestão de marcações, profissionais, clientes e pagamentos online.",
+    "areas": [
+      "Frontend",
+      "Backend",
+      "MySQL",
+      "Pagamentos online (Ifthenpay)",
+      "Deploy em produção"
+    ],
+    "projectSlug": "reservaja"
+  }
+]

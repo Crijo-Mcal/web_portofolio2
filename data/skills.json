@@ -1,0 +1,18 @@
+[
+  { "name": "HTML", "level": "À vontade", "icon": "html5/html5-original.svg" },
+  { "name": "CSS", "level": "À vontade", "icon": "css3/css3-original.svg" },
+  { "name": "Bootstrap", "level": "À vontade", "icon": "bootstrap/bootstrap-original.svg" },
+  { "name": "JavaScript", "level": "À vontade", "icon": "javascript/javascript-original.svg" },
+  { "name": "PHP", "level": "À vontade", "icon": "php/php-original.svg" },
+  { "name": "React", "level": "Familiaridade", "icon": "react/react-original.svg" },
+  { "name": "Vite", "level": "Familiaridade", "icon": "vitejs/vitejs-original.svg" },
+  { "name": "Tailwind CSS", "level": "Familiaridade", "icon": "tailwindcss/tailwindcss-original.svg" },
+  { "name": "TypeScript", "level": "Familiaridade", "icon": "typescript/typescript-original.svg" },
+  { "name": "MySQL", "level": "Familiaridade", "icon": "mysql/mysql-original.svg" },
+  { "name": "PostgreSQL", "level": "Familiaridade", "icon": "postgresql/postgresql-original.svg" },
+  { "name": "Node.js", "level": "Familiaridade", "icon": "nodejs/nodejs-original.svg" },
+  { "name": "Express", "level": "Familiaridade", "icon": "express/express-original.svg", "invert": true },
+  { "name": "Git", "level": "Familiaridade", "icon": "git/git-original.svg" },
+  { "name": "GitHub", "level": "Familiaridade", "icon": "github/github-original.svg", "invert": true },
+  { "name": "Docker", "level": "Familiaridade", "icon": "docker/docker-original.svg" }
+]

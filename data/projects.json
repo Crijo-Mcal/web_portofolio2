@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "reservaja",
+    "number": "01",
+    "name": "ReservaJá",
+    "featured": true,
+    "category": "PROJETO EM DESTAQUE",
+    "status": "EM DESENVOLVIMENTO",
+    "type": "Aplicação web full-stack · em desenvolvimento no estágio",
+    "shortDescription": "Aplicação web de reservas de serviços para clientes e profissionais.",
+    "description": "Aplicação web de reservas de serviços, com gestão de marcações, profissionais, clientes, serviços, avaliações e pagamentos online.",
+    "features": [
+      "Sistema de reservas e gestão de marcações",
+      "Gestão de profissionais, clientes e serviços",
+      "Pagamentos online através da Ifthenpay",
+      "Avaliações dos serviços",
+      "Implementação da aplicação num servidor de produção"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "Ifthenpay"
+    ],
+    "image": "/assets/projects/reservaja.png",
+    "detailImage": "/assets/projects/reservaja-detail.png",
+    "demoUrl": "https://www.bswebconnect.pt/est26/cris/html/client/home.php",
+    "repoUrl": "https://github.com/Crijo-Mcal/reservaja",
+    "context": {
+      "label": "ESTÁGIO BSWEBCONNECT",
+      "title": "Frontend & Backend",
+      "text": "Desenvolvimento frontend e backend com PHP, JavaScript, HTML e CSS, gestão de bases de dados MySQL, testes, resolução de problemas técnicos e implementação da aplicação num servidor de produção."
+    }
+  },
+  {
+    "slug": "to-do-list",
+    "number": "02",
+    "name": "To-Do List",
+    "featured": false,
+    "category": "FRONTEND · BACKEND · API",
+    "type": "Aplicação web full-stack",
+    "shortDescription": "Gestão de tarefas com autenticação e autorização em React.",
+    "description": "Aplicação de gestão de tarefas desenvolvida para explorar autenticação e autorização em aplicações React.",
+    "features": [
+      "Criação e gestão de tarefas",
+      "Autenticação de utilizadores com JWT",
+      "Autorização de acesso aos dados",
+      "Base de dados PostgreSQL"
+    ],
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "JWT",
+      "PostgreSQL"
+    ],
+    "image": "/assets/projects/to-do-list.png",
+    "demoUrl": "",
+    "repoUrl": ""
+  },
+  {
+    "slug": "weather-app",
+    "number": "03",
+    "name": "Weather App",
+    "featured": false,
+    "category": "FRONTEND · BACKEND · API",
+    "type": "Aplicação web · frontend e backend separados",
+    "shortDescription": "Informações meteorológicas com frontend e backend separados.",
+    "description": "Aplicação web para consultar informações meteorológicas através de uma arquitetura frontend e backend separada.",
+    "features": [
+      "Consulta de informações meteorológicas",
+      "Frontend em React com TypeScript e Vite",
+      "Backend em Express",
+      "Redis integrado no backend"
+    ],
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Express",
+      "Redis"
+    ],
+    "image": "/assets/projects/weather-app.png",
+    "demoUrl": "https://weather-app.crijolise.com/",
+    "repoUrl": "https://github.com/Crijo-Mcal/Weather-API"
+  },
+  {
+    "slug": "movie-explorer",
+    "number": "04",
+    "name": "Movie Explorer",
+    "featured": false,
+    "category": "FRONTEND · API",
+    "type": "Aplicação web frontend",
+    "shortDescription": "Pesquisar e explorar informações sobre filmes através de uma API.",
+    "description": "Aplicação web para pesquisar e explorar informações sobre filmes através de uma API.",
+    "features": [
+      "Pesquisa de filmes",
+      "Exploração de informações sobre cada filme",
+      "Dados obtidos através de uma API"
+    ],
+    "technologies": [
+      "React",
+      "Vite",
+      "API",
+      "Tailwind CSS"
+    ],
+    "image": "/assets/projects/movie-explorer.png",
+    "demoUrl": "https://movie-explorer.crijolise.com/",
+    "repoUrl": "https://github.com/Crijo-Mcal/Movie-Explorer"
+  },
+  {
+    "slug": "recipe-finder",
+    "number": "05",
+    "name": "Recipe Finder",
+    "featured": false,
+    "category": "FRONTEND · API",
+    "type": "Aplicação web frontend",
+    "shortDescription": "Pesquisar e explorar receitas através de uma API.",
+    "description": "Aplicação web para pesquisar e explorar receitas através de uma API.",
+    "features": [
+      "Pesquisa de receitas",
+      "Exploração de cada receita",
+      "Dados obtidos através de uma API"
+    ],
+    "technologies": [
+      "React",
+      "Vite",
+      "API",
+      "Tailwind CSS"
+    ],
+    "image": "/assets/projects/recipe-finder.png",
+    "demoUrl": "https://recipe-finder.crijolise.com/",
+    "repoUrl": "https://github.com/Crijo-Mcal/Recipe-Finder"
+  }
+]

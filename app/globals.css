@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Design tokens — palette "Hot Orange" (desain/README.md §3–5) */
+@theme {
+  --color-bg: #0e0e0e;
+  --color-bg-alt: #080808;
+  --color-card: #262626;
+  --color-text: #ffffff;
+  --color-muted: rgba(255, 255, 255, 0.8);
+  --color-border: rgba(255, 255, 255, 0.14);
+  --color-accent: #fba92c;
+  --color-accent-soft: rgba(251, 169, 44, 0.12);
+  --color-on-accent: #0e0e0e;
+  --color-navy: #14213d;
+
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-lora), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Breakpoints: ≤600px = HP, 601–900px = tablet, ≥901px = PC */
+  --breakpoint-tab: 601px;
+  --breakpoint-pc: 901px;
+
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-featured: 0 6px 16px rgba(0, 0, 0, 0.3);
+  --shadow-accent: 0 2px 8px rgba(251, 169, 44, 0.18);
+  --shadow-icon: 0 2px 6px rgba(0, 0, 0, 0.22);
+
+  --animate-ticker: ticker 40s linear infinite;
+
+  @keyframes ticker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Backdrop for transparent device mockups: soft orange glow so dark bezels stay visible */
+.stage {
+  background:
+    radial-gradient(ellipse 60% 70% at 50% 55%, rgba(251, 169, 44, 0.22), transparent 70%),
+    linear-gradient(180deg, #2c2c2c, #1c1c1c);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-ticker {
+    animation: none;
+  }
+}
