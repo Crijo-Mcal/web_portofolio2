@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Lora, JetBrains_Mono } from "next/font/google";
 import { MotionProvider } from "@/components/motion";
+import { SITE_URL } from "@/lib/site-url";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -21,15 +22,12 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400"],
 });
 
-const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://crijolise.com";
 
 const description =
   "Portfólio de Crijolise Morglia Marçal, Junior Full-Stack Web Developer em Portugal. Aplicações web com foco no frontend e no backend.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Crijolise Marçal — Full-Stack Web Developer",
     template: "%s — Crijolise Marçal",
